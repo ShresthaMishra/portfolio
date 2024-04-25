@@ -119,6 +119,16 @@ export const Bio = {
       title: "Machine Learning",
       skills: [
         {
+          name: "Python",
+          image:
+            "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        },
+        {
+          name: "Google Colab",
+          image:
+            "https://colab.research.google.com/img/colab_favicon_256px.png",
+        },
+        {
           name: "Jupyter",
           image:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg"
