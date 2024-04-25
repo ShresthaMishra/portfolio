@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/HeroSection';
 import Skills from './components/Skills';
 import Projects from "./components/Projects";
-import ProjectDetails from "./components/ProjectDetails";
 
 import { BrowserRouter as Router } from 'react-router-dom';
 

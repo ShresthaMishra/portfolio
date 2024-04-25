@@ -82,7 +82,8 @@ export const GitHubButton = styled.a`
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0px 20px;
+  margin-right : 10px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
@@ -102,7 +103,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0 6px;
+  padding: 0px 6px;
   @media screen and (max-width: 768px) {
     display: none;
   }
