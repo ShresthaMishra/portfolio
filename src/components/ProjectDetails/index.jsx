@@ -16,6 +16,7 @@ align-items: top;
 justify-content: center;
 overflow-y: scroll;
 transition: all 0.5s ease;
+overflow-y: scroll;
 `;
 
 const Wrapper = styled.div`
@@ -30,6 +31,7 @@ padding: 20px;
 display: flex;
 flex-direction: column;
 position: relative;
+overflow-y: scroll;
 `;
 
 const Title = styled.div`
@@ -107,45 +109,6 @@ const Tag = styled.div`
     }
 `;
 
-const Members = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin: 12px 6px;
-    @media only screen and (max-width: 600px) {
-        margin: 4px 6px;
-    }
-`;
-
-const Member = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 12px;
-`;
-
-const MemberImage = styled.img`
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 4px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-    @media only screen and (max-width: 600px) {
-        width: 32px;
-        height: 32px;
-    }
-`;
-
-const MemberName = styled.div`
-    font-size: 16px;
-    font-weight: 500;
-    width: 200px;
-    color: ${({ theme }) => theme.text_primary};
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
-    }
-`;
 
 
 const ButtonGroup = styled.div`

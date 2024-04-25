@@ -6,7 +6,7 @@ import memriseImg from "../../../images/memrise.png"
 
 const Container = styled.div`
 width: 100%;
-height: 1000%;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
@@ -16,6 +16,8 @@ align-items: top;
 justify-content: center;
 overflow-y: scroll;
 transition: all 0.5s ease;
+overflow-y: scroll;
+overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`
@@ -30,6 +32,8 @@ padding: 20px;
 display: flex;
 flex-direction: column;
 position: relative;
+overflow-y: scroll;
+overflow-x: hidden;
 `;
 
 const Title = styled.div`
@@ -74,16 +78,6 @@ const Image = styled.img`
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
-const Label = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    margin: 8px 6px;
-    @media only screen and (max-width: 600px) {
-        font-size: 16px;
-        margin: 8px 6px;
-    }
-`;
 
 const Tags = styled.div`
     display: flex;
@@ -138,7 +132,18 @@ const index = ({openModal, setOpenModal}) => {
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
-                    <Desc>{project?.description}</Desc>
+                    <Desc>Memrise is a language platform that uses spaced flashcards and short videos to improve learning rate among learners. For this project we decided to add Five additional features to the app that would improve the overall perfomance of the applicaiton. We incorporated Learning Sciences Principles to design features and that will take into account the Prior knowledge of a learner and customize learning outcomes accordingly. </Desc>
+                    <h3><b>Features Incorporated</b></h3>
+                    <ul>
+                        <li>
+                            <b>Speaking Assessment</b>: Learners are asked to repeat sentences and read texts presented to them.
+                            <Image src = ""></Image>
+                        </li>
+                        <li>Listening Assessment: Learners are asked to listen to an audio clip and answer questions</li>
+                        <li>Reading Assessment: Learners are asked to read a short paragraph and answer questions</li>
+                        <li>Writing Assessment: Learners are asked to write words in native script</li>
+                        <li>Gamified Assessment: Learners can skip levels by planing interactive games like escape rooms, puzzle solving etc.</li>
+                    </ul>
         
                 </Wrapper>
             </Container>
