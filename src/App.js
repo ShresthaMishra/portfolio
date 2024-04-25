@@ -1,9 +1,13 @@
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components';
+import { useState, useEffect } from "react";
 import { darkTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import Hero from './components/HeroSection';
 import Skills from './components/Skills';
+import Projects from "./components/Projects";
+import ProjectDetails from "./components/ProjectDetails";
+
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -19,8 +23,8 @@ width: 100%;
 clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);`
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(true);
-  // const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   // console.log(openModal)
   return (
     <ThemeProvider theme={darkTheme}>
@@ -31,9 +35,11 @@ function App() {
           <Wrapper>
             <Skills />
           </Wrapper>
-          {/* <Projects openModal={openModal} setOpenModal={setOpenModal} /> */}
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          
         </Body>
       </Router>
+      
     </ThemeProvider>
   );
 }
