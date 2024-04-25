@@ -153,7 +153,7 @@ export const Bio = {
       date: "Jan 2024 - May 2024",
       description:
         "Prototyped 5 additional features to Memrise using learning sciences principles and contexual inquiry",
-      image: "memrise.png",
+      image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/memrise.png",
       tags: ["Figma", "UI/Ux Design", "Learning Sciences", "Contexual Inquiry"],
       
     },

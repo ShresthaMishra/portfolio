@@ -130,7 +130,7 @@ const index = ({openModal, setOpenModal}) => {
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
 
-                    <Image src= {`../../Images/${project?.image}` } alt="project-image" />
+                    <Image src= {`${project?.image}`} alt="project-image" />
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
