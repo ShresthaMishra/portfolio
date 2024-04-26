@@ -153,6 +153,11 @@ const index = ({openModal, setOpenModal}) => {
                 
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
+                    <Tags>
+                        {project?.tags.map((tag) => (
+                            <Tag>{tag}</Tag>
+                        ))}
+                    </Tags>
                     <Desc>Traditional layout managers in Swing necessitate users to explicitly code the size and position of components on the screen. Implementing complex layouts using these managers can become cumbersome, and debugging or code management can also become challenging.</Desc>
 
                     <Desc>JAutoLayout is a layout manager for Java Swing that calculates the size and position of components within containers based on linear equality and inequality constraints defined by the user. This constraint-based approach enables JAutoLayout to dynamically update components whenever there are changes, both externally and internally, to the container. External changes may include resizing the main window, while internal changes could involve resizing components within the main frame.</Desc>
@@ -163,11 +168,7 @@ const index = ({openModal, setOpenModal}) => {
 
                     <Desc>The auto-layout functionality has been implemented in the JAutoLayout class. JAutoLayout implements the inbuilt LayoutManager interface and displays the component according to the constraints given by the user.
                     The layoutContainer() method inside the JAutoLayout class calls the solver.solve(constraint, parent.getHeight(), parent.getWidth()) method which returns a Hashmap with keys as the variable names given by the user and values as the coordinates and dimensions of that component. Once we get the constraints of each component, we then set the bounds of that component and add it to the parent component.</Desc>
-                    <Tags>
-                        {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
-                        ))}
-                    </Tags>
+                    
                     <Desc></Desc>
         
                 </Wrapper>

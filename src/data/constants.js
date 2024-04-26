@@ -204,6 +204,16 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 4,
+      title: "CineSage: Movie Revenue Prediction Tool",
+      date: "Aug 2023 - Dec 2023",
+      description:
+        "Movie Revenue Prediction based on plot, casting, budget, genre and historical revenue data",
+      image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/revenue_prediction.png",
+      tags: ["Flask", "D3.js", "Python", "Bert Encoding", "Neural Network", ],
+      
+    },
+    {
       id: 0,
       title: "Memrise But Better",
       date: "Jan 2024 - May 2024",
@@ -241,8 +251,8 @@ export const Bio = {
         "Renders objects incorporating physical features like smoothening, shadow, reflectance",
       image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/ray_tracing.png",
       tags: ["Java","Processing", "3D graphics", "Ray Tracing", "Catmull Clark Subdivision", "Midpoint Subdivision"],
-      
-    }
+    },
+    
 
   ];
   

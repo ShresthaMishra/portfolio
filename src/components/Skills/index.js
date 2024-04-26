@@ -125,7 +125,7 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title >Skills</Title>
         <Desc>Here are some of the technologies that I have worked with in the past 3 years.
         </Desc>
         <SkillsContainer>

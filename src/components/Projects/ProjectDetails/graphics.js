@@ -189,6 +189,11 @@ const index = ({openModal, setOpenModal}) => {
                 
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
+                    <Tags>
+                        {project?.tags.map((tag) => (
+                            <Tag>{tag}</Tag>
+                        ))}
+                    </Tags>
                     <Desc>Rendering Objects on screen requires incorporating various physical aspects to make the object look realistic. This involves displaying shadow based on the source of light, Incorporating features like gloss, reflectance, mirror effect on objects based on their surface texture. Various subdivision techniques can also be used to smoothen the object. </Desc>
                     
                     <Desc> The first set of images are results of from the Ray Tracing Algorithm that incorporates features like gloss, mirror etc.</Desc>
@@ -271,11 +276,7 @@ const index = ({openModal, setOpenModal}) => {
                         <Description class="description">Effects of Motion Blur on the Sphere</Description>
                     </Column>
                     </ImageContainer>
-                    <Tags>
-                        {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
-                        ))}
-                    </Tags>
+                    
         
                 </Wrapper>
             </Container>

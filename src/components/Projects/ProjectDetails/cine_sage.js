@@ -2,7 +2,7 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
-
+import model from "../../../images/model.png"
 
 const Container = styled.div`
 width: 100%;
@@ -112,20 +112,43 @@ const Tag = styled.div`
     }
 `;
 
-const Video = styled.iframe`
-    width: 100%;
-    height: 30em;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-`;
-
 const List = styled.li`
     margin-left : 2rem;
     display: list-item;
 `
+const ButtonGroup = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0px;
+    gap: 12px;
+`;
 
+const Button = styled.a`
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.primary};
+    ${({ dull, theme }) => dull && `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: ${({ theme }) => theme.primary + 99};
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+`;
 
 
 
@@ -149,8 +172,7 @@ const index = ({openModal, setOpenModal}) => {
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
 
-                    <Video src ="https://www.youtube.com/embed/sWBVHRUNRHk?si=3PFHEWPJJTjBiwGu"></Video>
-                
+                    <Image src= {`${project?.image}`} alt="project-image" />
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -158,21 +180,29 @@ const index = ({openModal, setOpenModal}) => {
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
-                    <Desc></Desc>
-                    <Desc>Approximately 40% of the elderly population experiences memory loss. While it may be benign in some cases, individuals with severe memory impairment conditions such as Alzheimer's and dementia encounter significant challenges in their daily activities.</Desc>
+                    <ButtonGroup>
+                        <Button href="https://cinesageinsights.azurewebsites.net/" target='new'>View Live Application</Button>
+                    </ButtonGroup>
 
-                    <Desc>Preliminary studies indicate that interaction with objects or memories from the past can facilitate memory recall more effectively than traditional methods. However, customizing these objects can be costly, and obtaining access to an individual's environment, such as their home or personal photos, can be challenging.</Desc>
+                    <Desc>This project aims to uncover a novel pathway for filmmakers make data-driven decisions using a predictive visualization tool. This tool takes into account variables such as plot premise, budget, star cast, release time-frame, and targeted geographies to predict and visualize a movie’s success and revenue. This has the potential to redefine movie production planning by combining data analysis and visualizations.</Desc>
 
-                    <Desc>This project aims to explore the effect of object interaction with individuals suffering from memory loss but in virtual environment. Initial user studies with 100 people indicate that people are able to recall around 50% of objects present in the simulated environments</Desc>
-                    
-                    Interactions Tested in the VR environment:
-                    <ul> 
-                        <List>Record Player</List>
-                        <List>Traditional Lamp</List>
-                        <List>Interactive Photo Gallary</List>
-                        <List>Birthday Party Decoration</List>
+                    <h3 style={{ textAlign: 'center' }}><b>Data Processing and Analysis</b> </h3>
+                    <Desc>We started with the "The Movies Dataset" avaible on Kaggle. Initial analysis indicated that 70% of the revenue data is missing or incomplete. We augmented the dataset by scrapping the web and updating contrywise revenue for each movie. To convert textual data into a usable format for our models, we utilize a fine-tuned BERT model from HuggingFace,
+                    known for its superior performance in text-related tasks. Numerical representations of the text are obtained by embedding movie plot summaries through BERT, and these embeddings serve as input features for our predictive models.</Desc>
+
+                    <h3 style={{ textAlign: 'center' }}><b>Neural Network</b> </h3>
+                    <Desc>The predictive revenue visualization aims to project revenue distribution across different countries. A neural network
+architecture takes as input:</Desc>
+<ul> 
+                        <List>the BERT-generated plot embeddings</List>
+                        <List>multi-hot vector for movie’s genres</List>
+                        <List>one-hot vector for the movie’s original language</List>
+                        <List>movie’s budget</List>
+                        <List>multi-hot vector denoting the top cast members</List>
                     </ul>
-                    
+                    <Image src= {model} alt="project-image" />
+
+                    <Desc>These inputs are first individually embedded using linear layers to reduce dimension, then stacked and embedded again into a hidden layer. Another linear layer maps the hidden layer to the predicted revenue, Our model had an accuracy of </Desc>
         
                 </Wrapper>
             </Container>
