@@ -163,7 +163,39 @@ const ImageContainer = styled.div`
 const Description = styled.p`
 text-align: center;
 `
+const ButtonGroup = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0px;
+    gap: 12px;
+`;
 
+const Button = styled.a`
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.primary};
+    ${({ dull, theme }) => dull && `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: ${({ theme }) => theme.primary + 99};
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+`;
 
 
 
@@ -194,6 +226,10 @@ const index = ({openModal, setOpenModal}) => {
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
+                    <ButtonGroup>
+                        <Button href="https://github.com/ShresthaMishra/Graphics_HWS" target='new'>View Code</Button>
+                    </ButtonGroup>
+                    
                     <Desc>Rendering Objects on screen requires incorporating various physical aspects to make the object look realistic. This involves displaying shadow based on the source of light, Incorporating features like gloss, reflectance, mirror effect on objects based on their surface texture. Various subdivision techniques can also be used to smoothen the object. </Desc>
                     
                     <Desc> The first set of images are results of from the Ray Tracing Algorithm that incorporates features like gloss, mirror etc.</Desc>

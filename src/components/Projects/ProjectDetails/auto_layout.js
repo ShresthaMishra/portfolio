@@ -125,7 +125,39 @@ const List = styled.li`
     margin-left : 2rem;
     display: list-item;
 `
+const ButtonGroup = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0px;
+    gap: 12px;
+`;
 
+const Button = styled.a`
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.primary};
+    ${({ dull, theme }) => dull && `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: ${({ theme }) => theme.primary + 99};
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+`;
 
 
 
@@ -158,6 +190,9 @@ const index = ({openModal, setOpenModal}) => {
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
+                    <ButtonGroup>
+                        <Button href="https://github.com/ShresthaMishra/JAutoLayout" target='new'>View Code</Button>
+                    </ButtonGroup>
                     <Desc>Traditional layout managers in Swing necessitate users to explicitly code the size and position of components on the screen. Implementing complex layouts using these managers can become cumbersome, and debugging or code management can also become challenging.</Desc>
 
                     <Desc>JAutoLayout is a layout manager for Java Swing that calculates the size and position of components within containers based on linear equality and inequality constraints defined by the user. This constraint-based approach enables JAutoLayout to dynamically update components whenever there are changes, both externally and internally, to the container. External changes may include resizing the main window, while internal changes could involve resizing components within the main frame.</Desc>

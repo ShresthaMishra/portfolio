@@ -181,6 +181,7 @@ const index = ({openModal, setOpenModal}) => {
                         ))}
                     </Tags>
                     <ButtonGroup>
+                        <Button href="https://github.com/ShresthaMishra/Cine-Sage-Insights" target='new'>View Code</Button>
                         <Button href="https://cinesageinsights.azurewebsites.net/" target='new'>View Live Application</Button>
                     </ButtonGroup>
 
