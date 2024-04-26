@@ -222,6 +222,16 @@ export const Bio = {
       image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/vr_project.png",
       tags: ["Virtual Reality", "Unity", "C#", "HTC Vive Pro"],
       
+    },
+    {
+      id: 2,
+      title: "Auto Layout",
+      date: "Aug 2022 - Dec 2022",
+      description:
+        "Simplex algorithm dynamically computing the size and position of components on the screen",
+      image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/auto-layout.png",
+      tags: ["Java","Swing", "Simplex Algorithm", "Layout Manager", "Maven", "Visual Format Language"],
+      
     }
   ];
   

@@ -2,7 +2,7 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
-
+import Constraints from '../../../images/constraints.png'
 
 const Container = styled.div`
 width: 100%;
@@ -149,23 +149,20 @@ const index = ({openModal, setOpenModal}) => {
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
 
-                    <Video src ="https://www.youtube.com/embed/sWBVHRUNRHk?si=3PFHEWPJJTjBiwGu"></Video>
+                    <Image src ="https://www.youtube.com/embed/sWBVHRUNRHk?si=3PFHEWPJJTjBiwGu"></Image>
                 
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
-                    <Desc>Approximately 40% of the elderly population experiences memory loss. While it may be benign in some cases, individuals with severe memory impairment conditions such as Alzheimer's and dementia encounter significant challenges in their daily activities.</Desc>
+                    <Desc>Traditional layout managers in Swing necessitate users to explicitly code the size and position of components on the screen. Implementing complex layouts using these managers can become cumbersome, and debugging or code management can also become challenging.</Desc>
 
-                    <Desc>Preliminary studies indicate that interaction with objects or memories from the past can facilitate memory recall more effectively than traditional methods. However, customizing these objects can be costly, and obtaining access to an individual's environment, such as their home or personal photos, can be challenging.</Desc>
-
-                    <Desc>This project aims to explore the effect of object interaction with individuals suffering from memory loss but in virtual environment. Initial user studies with 100 people indicate that people are able to recall around 50% of objects present in the simulated environments</Desc>
+                    <Desc>JAutoLayout is a layout manager for Java Swing that calculates the size and position of components within containers based on linear equality and inequality constraints defined by the user. This constraint-based approach enables JAutoLayout to dynamically update components whenever there are changes, both externally and internally, to the container. External changes may include resizing the main window, while internal changes could involve resizing components within the main frame.</Desc>
                     
-                    Interactions Tested in the VR environment:
-                    <ul> 
-                        <List>Record Player</List>
-                        <List>Traditional Lamp</List>
-                        <List>Interactive Photo Gallary</List>
-                        <List>Birthday Party Decoration</List>
-                    </ul>
+                    <Desc> JAutoLayout uses Apple’s Visual Format Language (VFL) as a means of defining the layout and constraints among components. The solver is a re-implementation of the Kiwi Constraint Solver, which itself is based on the Cassowary Constraint Solver.</Desc>
+
+                    <Image_prototype src = {Constraints}></Image_prototype>
+
+                    <Desc>The auto-layout functionality has been implemented in the JAutoLayout class. JAutoLayout implements the inbuilt LayoutManager interface and displays the component according to the constraints given by the user.
+                    The layoutContainer() method inside the JAutoLayout class calls the solver.solve(constraint, parent.getHeight(), parent.getWidth()) method which returns a Hashmap with keys as the variable names given by the user and values as the coordinates and dimensions of that component. Once we get the constraints of each component, we then set the bounds of that component and add it to the parent component.</Desc>
                     <Tags>
                         {project?.tags.map((tag) => (
                             <Tag>{tag}</Tag>

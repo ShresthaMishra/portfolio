@@ -4,6 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Memrise from '../Projects/ProjectDetails/memrise'
 import VRProject from '../Projects/ProjectDetails/vr_project'
+import AutoLayout from '../Projects/ProjectDetails/auto_layout'
 
 const Container = styled.div`
 width: 100%;
@@ -150,12 +151,13 @@ const renderComponent = (project, openModal, setOpenModal) => {
     switch (project.id) {
         case 0:
             return <Memrise openModal ={openModal} setOpenModal = {setOpenModal}/>;
-        
         case 1:
             return <VRProject openModal ={openModal} setOpenModal = {setOpenModal}/>;
+        case 2:
+            return <AutoLayout openModal ={openModal} setOpenModal = {setOpenModal}/>;
         // Add more cases for other project ids
         default:
-            return null
+            return null;
     }
 };
 

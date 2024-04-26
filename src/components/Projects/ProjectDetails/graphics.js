@@ -3,7 +3,6 @@ import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Container = styled.div`
 width: 100%;
 height: 100%;
@@ -155,7 +154,7 @@ const index = ({openModal, setOpenModal}) => {
                     <Date>{project.date}</Date>
                     <Desc>Approximately 40% of the elderly population experiences memory loss. While it may be benign in some cases, individuals with severe memory impairment conditions such as Alzheimer's and dementia encounter significant challenges in their daily activities.</Desc>
 
-                    <Desc>Preliminary studies indicate that interaction with objects or memories from the past can facilitate memory recall more effectively than traditional methods. However, customizing these objects can be costly, and obtaining access to an individual's environment, such as their home or personal photos, can be challenging.</Desc>
+                    <Desc>Preliminary studies indicate that interaction with objects or memories from the past can facilitate memory recall more effectively than traditional methods. However, customizing these objects can be costly, and obtaining access to an individual's environment, such as their home or personal photos, can be challenging."</Desc>
 
                     <Desc>This project aims to explore the effect of object interaction with individuals suffering from memory loss but in virtual environment. Initial user studies with 100 people indicate that people are able to recall around 50% of objects present in the simulated environments</Desc>
                     
