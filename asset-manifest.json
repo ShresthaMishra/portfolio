@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/portfolio/static/js/main.1d538c90.js",
+    "main.js": "/portfolio/static/js/main.f9485c10.js",
     "static/media/gamified.png": "/portfolio/static/media/gamified.59aaeeab33f825056c40.png",
     "static/media/HeroImage.png": "/portfolio/static/media/HeroImage.b9818f8d15877f8d3ef8.png",
     "static/media/memrise.png": "/portfolio/static/media/memrise.5e0fc160683bbec232ad.png",
+    "static/media/model.png": "/portfolio/static/media/model.9980ebb196fdd7980251.png",
     "static/media/reading_assessment.png": "/portfolio/static/media/reading_assessment.fc6e698eab8dbb661024.png",
     "static/media/listening_assessment.png": "/portfolio/static/media/listening_assessment.feddb0508f99ca5fb037.png",
     "static/media/written_assessment.png": "/portfolio/static/media/written_assessment.5a3a8763939fd29a64df.png",
@@ -24,10 +25,10 @@
     "static/media/catmull1.png": "/portfolio/static/media/catmull1.59da6d089863da91bbae.png",
     "index.html": "/portfolio/index.html",
     "main.bf538fe7.css.map": "/portfolio/static/css/main.bf538fe7.css.map",
-    "main.1d538c90.js.map": "/portfolio/static/js/main.1d538c90.js.map"
+    "main.f9485c10.js.map": "/portfolio/static/js/main.f9485c10.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.1d538c90.js"
+    "static/js/main.f9485c10.js"
   ]
 }
