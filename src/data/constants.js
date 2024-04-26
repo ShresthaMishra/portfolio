@@ -213,6 +213,16 @@ export const Bio = {
       tags: ["Figma", "UI/Ux Design", "Learning Sciences", "Contexual Inquiry"],
       
     },
+    {
+      id: 1,
+      title: "VR for Memory Recall",
+      date: "May 2023 - Aug 2023",
+      description:
+        "Developed a 70s themed VR environment to help with memory recall among the elderly",
+      image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/vr_project.png",
+      tags: ["Figma", "UI/Ux Design", "Learning Sciences", "Contexual Inquiry"],
+      
+    }
   ];
   
   export const TimeLineData = [

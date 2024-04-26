@@ -147,11 +147,11 @@ const Button = styled.a`
 
 const renderComponent = (project, openModal, setOpenModal) => {
     switch (project.id) {
-        case "memrise":
-            return <Memrise openModal={openModal}/>;
+        case 0:
+            return <Memrise openModal ={openModal} setOpenModal = {setOpenModal}/>;;
         // Add more cases for other project ids
         default:
-            return <Memrise openModal ={openModal} setOpenModal = {setOpenModal}/>;;
+            return null
     }
 };
 
