@@ -220,7 +220,7 @@ export const Bio = {
       description:
         "Developed a 70s themed VR environment to help with memory recall among the elderly",
       image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/vr_project.png",
-      tags: ["Figma", "UI/Ux Design", "Learning Sciences", "Contexual Inquiry"],
+      tags: ["Virtual Reality", "Unity", "C#", "HTC Vive Pro"],
       
     }
   ];

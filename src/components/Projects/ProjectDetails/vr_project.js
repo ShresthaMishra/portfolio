@@ -2,8 +2,12 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
-import Memrise from '../Projects/ProjectDetails/memrise'
-import VRProject from '../Projects/ProjectDetails/vr_project'
+import memriseImg from "../../../images/memrise.png"
+import gamefied from "../../../images/gamified.png"
+import reading from "../../../images/reading_assessment.png"
+import listening from "../../../images/listening_assessment.png"
+import speaking from "../../../images/speaking_assessment.png"
+import writing from "../../../images/written_assessment.png"
 
 const Container = styled.div`
 width: 100%;
@@ -18,6 +22,7 @@ justify-content: center;
 overflow-y: scroll;
 transition: all 0.5s ease;
 overflow-y: scroll;
+overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`
@@ -33,6 +38,7 @@ display: flex;
 flex-direction: column;
 position: relative;
 overflow-y: scroll;
+overflow-x: hidden;
 `;
 
 const Title = styled.div`
@@ -76,17 +82,18 @@ const Image = styled.img`
     margin-top: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
-
-const Label = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    margin: 8px 6px;
-    @media only screen and (max-width: 600px) {
-        font-size: 16px;
-        margin: 8px 6px;
-    }
+const Image_prototype = styled.img`
+    width: 80%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 1rem;
 `;
+
 
 const Tags = styled.div`
     display: flex;
@@ -110,57 +117,28 @@ const Tag = styled.div`
     }
 `;
 
-
-
-const ButtonGroup = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    margin: 12px 0px;
-    gap: 12px;
-`;
-
-const Button = styled.a`
+const Video = styled.iframe`
     width: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    padding: 12px 16px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
-    ${({ dull, theme }) => dull && `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    &:hover {
-        background-color: ${({ theme }) => theme.primary + 99};
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
+    height: 30em;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
-const renderComponent = (project, openModal, setOpenModal) => {
-    switch (project.id) {
-        case 0:
-            return <Memrise openModal ={openModal} setOpenModal = {setOpenModal}/>;
-        
-        case 1:
-            return <VRProject openModal ={openModal} setOpenModal = {setOpenModal}/>;
-        // Add more cases for other project ids
-        default:
-            return null
-    }
-};
+const List = styled.li`
+    margin-left : 2rem;
+    display: list-item;
+`
 
 
-const index = ({ openModal, setOpenModal }) => {
+
+
+
+
+
+
+const index = ({openModal, setOpenModal}) => {
     const project = openModal?.project;
     return (
         <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
@@ -176,16 +154,30 @@ const index = ({ openModal, setOpenModal }) => {
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
 
-                    {/* <Image src={project?.image} />
+                    <Video src ="https://www.youtube.com/embed/sWBVHRUNRHk?si=3PFHEWPJJTjBiwGu"></Video>
+                
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
+                    <Desc>Approximately 40% of the elderly population experiences memory loss. While it may be benign in some cases, individuals with severe memory impairment conditions such as Alzheimer's and dementia encounter significant challenges in their daily activities.</Desc>
+
+                    <Desc>Preliminary studies indicate that interaction with objects or memories from the past can facilitate memory recall more effectively than traditional methods. However, customizing these objects can be costly, and obtaining access to an individual's environment, such as their home or personal photos, can be challenging."</Desc>
+
+                    <Desc>This project aims to explore the effect of object interaction with individuals suffering from memory loss but in virtual environment. Initial user studies with 100 people indicate that people are able to recall around 50% of objects present in the simulated environments</Desc>
+                    
+                    Interactions Tested in the VR environment:
+                    <ul> 
+                        <List>Record Player</List>
+                        <List>Traditional Lamp</List>
+                        <List>Interactive Photo Gallary</List>
+                        <List>Birthday Party Decoration</List>
+                    </ul>
                     <Tags>
                         {project?.tags.map((tag) => (
                             <Tag>{tag}</Tag>
                         ))}
                     </Tags>
-                    <Desc>{project?.description}</Desc> */}
-                    {renderComponent(project, openModal, setOpenModal)}
+                    <Desc></Desc>
+        
                 </Wrapper>
             </Container>
 
