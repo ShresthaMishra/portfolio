@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/portfolio/static/js/main.04028b1e.js",
+    "main.js": "/portfolio/static/js/main.1d538c90.js",
     "static/media/gamified.png": "/portfolio/static/media/gamified.59aaeeab33f825056c40.png",
     "static/media/HeroImage.png": "/portfolio/static/media/HeroImage.b9818f8d15877f8d3ef8.png",
     "static/media/memrise.png": "/portfolio/static/media/memrise.5e0fc160683bbec232ad.png",
@@ -9,13 +9,25 @@
     "static/media/listening_assessment.png": "/portfolio/static/media/listening_assessment.feddb0508f99ca5fb037.png",
     "static/media/written_assessment.png": "/portfolio/static/media/written_assessment.5a3a8763939fd29a64df.png",
     "static/media/speaking_assessment.png": "/portfolio/static/media/speaking_assessment.3b59cf798d154de42871.png",
+    "static/media/midpoint4.png": "/portfolio/static/media/midpoint4.b4a7aa564107889aa0ea.png",
+    "static/media/catmull4.png": "/portfolio/static/media/catmull4.f768b52053778ebde40d.png",
     "static/media/constraints.png": "/portfolio/static/media/constraints.790ae342905ba60cee94.png",
+    "static/media/midpoint2.png": "/portfolio/static/media/midpoint2.fd4ba2223b8ce8a67057.png",
+    "static/media/motion.png": "/portfolio/static/media/motion.7f34aa7f998586231fc4.png",
+    "static/media/motion1.png": "/portfolio/static/media/motion1.d5fce6c18432ae8db64e.png",
+    "static/media/midpoint1.png": "/portfolio/static/media/midpoint1.cb832f6c064be5fb6eeb.png",
+    "static/media/catmull2.png": "/portfolio/static/media/catmull2.9b282cb35a94f5c37717.png",
+    "static/media/catmull.png": "/portfolio/static/media/catmull.5dab5c69d303b8809aff.png",
+    "static/media/reflectance_object.png": "/portfolio/static/media/reflectance_object.0b7a43bfe6eed1f7ab7b.png",
+    "static/media/midpoint.png": "/portfolio/static/media/midpoint.1b538af6c503bbbab6b1.png",
+    "static/media/reflectance2.png": "/portfolio/static/media/reflectance2.ca6137a50a65cedffb3d.png",
+    "static/media/catmull1.png": "/portfolio/static/media/catmull1.59da6d089863da91bbae.png",
     "index.html": "/portfolio/index.html",
     "main.bf538fe7.css.map": "/portfolio/static/css/main.bf538fe7.css.map",
-    "main.04028b1e.js.map": "/portfolio/static/js/main.04028b1e.js.map"
+    "main.1d538c90.js.map": "/portfolio/static/js/main.1d538c90.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.04028b1e.js"
+    "static/js/main.1d538c90.js"
   ]
 }

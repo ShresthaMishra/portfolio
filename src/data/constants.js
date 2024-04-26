@@ -232,7 +232,18 @@ export const Bio = {
       image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/auto-layout.png",
       tags: ["Java","Swing", "Simplex Algorithm", "Layout Manager", "Maven", "Visual Format Language"],
       
+    },
+    {
+      id: 3,
+      title: "Graphics Principles",
+      date: "Jan 2024 - May 2024",
+      description:
+        "Renders objects incorporating physical features like smoothening, shadow, reflectance",
+      image: "https://raw.githubusercontent.com/ShresthaMishra/portfolio/main/src/images/ray_tracing.png",
+      tags: ["Java","Processing", "3D graphics", "Ray Tracing", "Catmull Clark Subdivision", "Midpoint Subdivision"],
+      
     }
+
   ];
   
   export const TimeLineData = [

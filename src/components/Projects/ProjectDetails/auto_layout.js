@@ -149,7 +149,7 @@ const index = ({openModal, setOpenModal}) => {
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
 
-                    <Image src ="https://www.youtube.com/embed/sWBVHRUNRHk?si=3PFHEWPJJTjBiwGu"></Image>
+                    <Image src = {`${project?.image}`}></Image>
                 
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
