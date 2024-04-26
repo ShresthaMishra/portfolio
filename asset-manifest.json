@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/portfolio/static/js/main.9d8dd3d9.js",
+    "main.js": "/portfolio/static/js/main.3fcf87be.js",
     "static/media/gamified.png": "/portfolio/static/media/gamified.59aaeeab33f825056c40.png",
     "static/media/HeroImage.png": "/portfolio/static/media/HeroImage.b9818f8d15877f8d3ef8.png",
     "static/media/memrise.png": "/portfolio/static/media/memrise.5e0fc160683bbec232ad.png",
@@ -11,10 +11,10 @@
     "static/media/speaking_assessment.png": "/portfolio/static/media/speaking_assessment.3b59cf798d154de42871.png",
     "index.html": "/portfolio/index.html",
     "main.bf538fe7.css.map": "/portfolio/static/css/main.bf538fe7.css.map",
-    "main.9d8dd3d9.js.map": "/portfolio/static/js/main.9d8dd3d9.js.map"
+    "main.3fcf87be.js.map": "/portfolio/static/js/main.3fcf87be.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.9d8dd3d9.js"
+    "static/js/main.3fcf87be.js"
   ]
 }
