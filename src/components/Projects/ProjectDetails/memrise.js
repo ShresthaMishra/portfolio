@@ -3,6 +3,11 @@ import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
 import memriseImg from "../../../images/memrise.png"
+import gamefied from "../../../images/gamified.png"
+import reading from "../../../images/reading_assessment.png"
+import listening from "../../../images/listening_assessment.png"
+import speaking from "../../../images/speaking_assessment.png"
+import writing from "../../../images/written_assessment.png"
 
 const Container = styled.div`
 width: 100%;
@@ -77,6 +82,17 @@ const Image = styled.img`
     margin-top: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
+const Image_prototype = styled.img`
+    width: 80%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 1rem;
+`;
 
 
 const Tags = styled.div`
@@ -137,12 +153,20 @@ const index = ({openModal, setOpenModal}) => {
                     <ul>
                         <li>
                             <b>Speaking Assessment</b>: Learners are asked to repeat sentences and read texts presented to them.
-                            <Image src = ""></Image>
+                            <Image_prototype src = {speaking}></Image_prototype>
                         </li>
-                        <li>Listening Assessment: Learners are asked to listen to an audio clip and answer questions</li>
-                        <li>Reading Assessment: Learners are asked to read a short paragraph and answer questions</li>
-                        <li>Writing Assessment: Learners are asked to write words in native script</li>
-                        <li>Gamified Assessment: Learners can skip levels by planing interactive games like escape rooms, puzzle solving etc.</li>
+                        <li><b>Listening Assessment</b>: Learners are asked to listen to an audio clip and answer questions
+                            <Image_prototype src = {listening}></Image_prototype>
+                        </li>
+                        <li><b>Reading Assessment</b>: Learners are asked to read a short paragraph and answer questions
+                        <Image_prototype src = {reading}></Image_prototype>
+                        </li>
+                        <li><b>Writing Assessment</b>: Learners are asked to write words in native script
+                        <Image_prototype src = {writing}></Image_prototype>
+                        </li>
+                        <li><b>Gamified Assessment</b>: Learners can skip levels by planing interactive games like escape rooms, puzzle solving etc.
+                        <Image_prototype src = {gamefied}></Image_prototype>
+                        </li>
                     </ul>
         
                 </Wrapper>
