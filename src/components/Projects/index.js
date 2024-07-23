@@ -45,6 +45,17 @@ margin-top: 20px;
       font-size: 32px;
   }
 `;
+export const Disclaimer = styled.div`
+font-size: 25px;
+text-align: center;
+font-weight: 600;
+margin-top: 20px;
+  color: ${({ theme }) => theme.text_primary};
+  @media (max-width: 768px) {
+      margin-top: 12px;
+      font-size: 32px;
+  }
+`;
 
 export const Desc = styled.div`
     font-size: 18px;
@@ -116,6 +127,7 @@ const Projects = ({openModal,setOpenModal}) => {
     <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
+        <Disclaimer>Click on Each project for more Details!</Disclaimer>
         <CardContainer>
           {projects
             .map((project) => (
