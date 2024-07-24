@@ -9,7 +9,7 @@ export const Bio = {
       "As a dynamic and driven full-stack software engineer, I thrive on the intersection of creativity and technical acumen. Driven by a passion for innovation and a dedication to continuous learning, I’m excited to leverage my skills and experience to tackle new challenges and make meaningful contributions to the world of software engineering.",
     github: "https://github.com/ShresthaMishra",
     resume:
-      "https://drive.google.com/file/d/1iflZPT78RuwbPrzhu8AT_4bPhk-otSqX/view?usp=sharing",
+      "https://drive.google.com/file/d/1GqHHR3m-j0tSIftvfWH4uo_0yjXL8JLx/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/shrestha25/",
     insta: "https://www.instagram.com/shrestha_mishra/",
     facebook: "https://www.facebook.com/shrestha.mishra.5/",
